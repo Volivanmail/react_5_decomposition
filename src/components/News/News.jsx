@@ -2,7 +2,8 @@ import React from "react";
 import New from './New';
 
 
-//Список новостей
+//Список новостей,  
+
 function News(props) {
     return (
         <div className="news-blocks">
