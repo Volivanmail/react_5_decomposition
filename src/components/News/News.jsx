@@ -1,30 +1,22 @@
 import React from "react";
-import New from './New';
+import { New } from "./New";
+import { NavNews } from "./NavNews";
+import { Date } from "./Date";
 
 
 //Список новостей,  
 
 function News(props) {
+
     return (
-        <div className="news-blocks">
-            <New>
-                <div className="new-wrapper">
-                    <img class='icon-news' src='https://www.kindpng.com/picc/m/193-1939576_world-news-png-world-map-facebook-cover-transparent.png' alt={props.text} />
-                    <p className="news-block">Путин упростил получение автомобильных номеров</p>
-                </div>
-            </New>
-            <New>
-                <div className="new-wrapper">
-                    <img class='icon-news' src='https://www.kindpng.com/picc/m/193-1939576_world-news-png-world-map-facebook-cover-transparent.png' alt={props.text} />
-                    <p className="news-block">В команде Зеленского раскрыли план реформ на Украине</p>
-                </div>
-            </New>
-            <New>
-                <div className="new-wrapper">
-                    <img class='icon-news' src='https://www.kindpng.com/picc/m/193-1939576_world-news-png-world-map-facebook-cover-transparent.png' alt={props.text} />
-                    <p className="news-block">Турпомощь прокомментировала гибель десятков россиян в Анталье</p>
-                </div>
-            </New>
+        <div className="news">
+            <div className="navigate">
+                <NavNews selected={"Сейчас в СМИ"} onSelect={function onSelect() {}} />
+                <Date/>
+            </div>
+            <div>
+                <ListNews news={props.news} />
+            </div>
         </div>
     )
 }
