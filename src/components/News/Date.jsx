@@ -1,7 +1,9 @@
-export function Date() {
+// Компонент для отображения текущего времени и даты
+
+let date = new Date().toLocaleString();
+
+export default function LocDate() {
     return (
-        <div className="local-date">
-            {new Date().toLocaleString()}
-        </div>
+        <div className="local-date">{date}</div>
     )
 }

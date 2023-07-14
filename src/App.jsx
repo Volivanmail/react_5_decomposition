@@ -1,18 +1,20 @@
 import './App.css';
 import * as data from './data/data';
+import News from './components/News/News';
 import ExchangeRates from './components/ExchangeRates/ExchangeRates';
+import Promo from './components/Promo/Promo';
 
 
-function App() {
+export default function App() {
 
   return (
     <>
       <header className='header'>
         <div className='newsPanel'>
-          <News news={news} />
+          <News news={data.news} navNews={data.navNews}/>
           <ExchangeRates rates={data.rates} /> 
         </div>
-        <WorkOnBugs title='Работа над ошибками' text='Смотрите на Яндексе и запоминайте' image={require("./Media/error.jpeg")} link='#' />
+        <Promo props={data.promo} />
       </header>
       {/* <div className='searchBox'>
         <SearchMenu searchMenuItems={searchMenuItems} />
@@ -37,5 +39,3 @@ function App() {
     </>
   );
 }
-
-export default App

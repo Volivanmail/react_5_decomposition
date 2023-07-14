@@ -1,4 +1,5 @@
 import uniqid from "uniqid";
+import PropTypes from 'prop-types';
 
 // Компонет биржевых котировок с Московской биржи
 
@@ -15,3 +16,7 @@ export default function ExchangeRates({rates}) {
         </div>
     )
 }
+
+ExchangeRates.propTypes = {
+    rates: PropTypes.array
+};

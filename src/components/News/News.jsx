@@ -1,24 +1,27 @@
-import React from "react";
-import { New } from "./New";
-import { NavNews } from "./NavNews";
-import { Date } from "./Date";
+import New from "./New";
+import NavNews from "./NavNews";
+import LocDate from "./Date";
+import PropTypes from "prop-types";
 
 
 //Список новостей,  
 
-function News(props) {
+export default function News({navNews, news}) {
 
     return (
         <div className="news">
             <div className="navigate">
-                <NavNews selected={"Сейчас в СМИ"} onSelect={function onSelect() {}} />
-                <Date/>
+                <NavNews filters={navNews}  selected={"Сейчас в СМИ"} onSelect={function onSelect() {}} />
+                <LocDate/>
             </div>
             <div>
-                <ListNews news={props.news} />
+                <New news={news} />
             </div>
         </div>
     )
 }
 
-export default News;
+News.propTypes =  {
+    navNews: PropTypes.array,
+    news: PropTypes.array
+}
