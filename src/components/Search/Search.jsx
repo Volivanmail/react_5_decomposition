@@ -1,4 +1,6 @@
-export default function Search(icon) {
+import PropTypes from "prop-types";
+
+export default function Search({icon}) {
     return (
         <div className="search">
             <img src={icon} className="logo" alt="" />
@@ -8,4 +10,8 @@ export default function Search(icon) {
                 </form>
         </div>
     )
+}
+
+Search.propTypes = {
+    icon: PropTypes.any
 }

@@ -21,11 +21,11 @@ export default function App() {
         </div>
         <Promo props={data.promo} />
       </section>
-      <div className='search-block'>
-        {/* <SearchNav searchItems={data.searchItems} /> */}
+      <section className='search-block'>
+        <SearchNav searchItems={data.searchItems} />
         <Search icon={ya}/>
         <Ads image={adsBanner} />
-      </div>
+      </section>
       {/* <footer className='footer'>
         <div>
           <WeatherWidget icon={require("./Media/rain_weather_icon_151998.png")} mailLink="#" mainTemp="+17" upLink="#" upName="Утром" upTemp="+17" downLink="#" downName="Днем" downTemp="+20"/>
