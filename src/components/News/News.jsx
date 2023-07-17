@@ -2,16 +2,18 @@ import New from "./New";
 import NavNews from "./NavNews";
 import LocDate from "./Date";
 import PropTypes from "prop-types";
+import { useState } from "react";
 
 
 //Список новостей,  
 
 export default function News({navNews, news}) {
+    const [stateFilter, selectFilter] = useState("Сейчас в СМИ");
 
     return (
         <div className="news">
             <div className="navigate">
-                <NavNews filters={navNews}  selected={"Сейчас в СМИ"} onSelect={function onSelect() {}} />
+                <NavNews filters={navNews}  selected={stateFilter} onSelect={(filter) => selectFilter(filter)} />
                 <LocDate/>
             </div>
             <div>

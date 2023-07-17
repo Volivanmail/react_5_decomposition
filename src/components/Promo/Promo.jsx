@@ -7,10 +7,8 @@ export default function Promo ({ props }) {
     return(
         <div className="promo">
             <img src={img} alt="img" className="promo-image" />
-            <h3>
-                <a href={link}>{title}</a>
-            </h3>
-            <p>{description}</p>
+            <a href={link} className="promo-title">{title}</a>
+            <p className="promo-text">{description}</p>
         </div>
     )
 }

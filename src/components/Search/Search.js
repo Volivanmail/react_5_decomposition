@@ -1,26 +1,11 @@
-import React from 'react';
-import { Form, Input, Button } from 'reactstrap';
-
-
-export default function SearchForm() {
+export default function Search(icon) {
     return (
-        <Form className='form'>
-            <div className='logo'></div>
-            <Input />
-            <Button>Найти</Button>
-        </Form>
-        // <div className='search__form'>
-        /* <form className='form'>
-            <div className='search'>
-                <input
-                    type='text'
-                    className='form-control'
-                />
-            </div>
-            <button type='submit' className='btn btn-primary'>
-                Найти
-            </button>
-        </form> */
-        // </div >
+        <div className="search">
+            <img src={icon} className="logo" alt="" />
+                <form className='seafch-form'>
+                    <input className="search-area" type="text" name="search" placeholder="Найдется все. Например, фазы луны сегодня"/>
+                    <button className="search-button" type="submit" name="submit">Найти</button>
+                </form>
+        </div>
     )
 }

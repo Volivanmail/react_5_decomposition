@@ -5,14 +5,15 @@ import PropTypes from "prop-types";
 
 export default function NavNews({selected, onSelect, filters}) {
     return (
-        <div className="news-nav">
-            {filters.map((item) => 
-                <div className={selected === item.name ? "filter active" : "filter"} onSelect={onSelect} key={uniqid(item.title)}>
-                    <a href={item.link}>{item.title}</a>
-            </div>
+        <nav className="news-nav">
+            {filters.map((filter) => 
+                <div className={filter.title === selected? "filter active" : "filter"} 
+                    onClick={()=> onSelect(filter.title)} key={uniqid(filter.title)}>
+                    <a href={filter.link}>{filter.title}</a>
+                </div>
             )}
-        </div>
-        )
+        </nav>
+    )
 }
 
 NavNews.propTypes = {

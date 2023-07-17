@@ -1,5 +1,5 @@
 import uniqid from "uniqid";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 // Компонет биржевых котировок с Московской биржи
 

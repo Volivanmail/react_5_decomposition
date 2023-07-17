@@ -3,25 +3,30 @@ import * as data from './data/data';
 import News from './components/News/News';
 import ExchangeRates from './components/ExchangeRates/ExchangeRates';
 import Promo from './components/Promo/Promo';
+import Ads from './components/Ads/Ads';
+import Search from './components/Search/Search';
+import SearchNav from './components/Search/SearchNav';
+import adsBanner from './data/icon/adsBanner.png';
+import ya from './data/icon/ya.png';
 
 
 export default function App() {
 
   return (
     <>
-      <header className='header'>
-        <div className='newsPanel'>
+      <section className='news-block'>
+        <div>
           <News news={data.news} navNews={data.navNews}/>
           <ExchangeRates rates={data.rates} /> 
         </div>
         <Promo props={data.promo} />
-      </header>
-      {/* <div className='searchBox'>
-        <SearchMenu searchMenuItems={searchMenuItems} />
-        <SearchBar />
-        <Banner image={require("./Media/furious.jpeg")} />
+      </section>
+      <div className='search-block'>
+        {/* <SearchNav searchItems={data.searchItems} /> */}
+        <Search icon={ya}/>
+        <Ads image={adsBanner} />
       </div>
-      <footer className='footer'>
+      {/* <footer className='footer'>
         <div>
           <WeatherWidget icon={require("./Media/rain_weather_icon_151998.png")} mailLink="#" mainTemp="+17" upLink="#" upName="Утром" upTemp="+17" downLink="#" downName="Днем" downTemp="+20"/>
           <PopularWidget popular={popular} />

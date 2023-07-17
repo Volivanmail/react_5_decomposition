@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-.header {
+.news-block {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -76,9 +76,8 @@ ul {
 }
 
 a {
-  font-weight: 500;
+  font-weight: inherit;
   color: inherit;
-  /* color: #646cff; */
   text-decoration: none;
 }
 a:hover {
@@ -89,7 +88,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   padding-left: 70px;
-  /* align-self: center; */
+  align-items: flex-start;
+  justify-content: flex-end;
 }
 
 .promo-image {
@@ -99,5 +99,59 @@ a:hover {
 }
 
 .active {
+  color: #3e47f9;
+  font-weight: 600;
+}
+
+.promo-title {
+  margin-top: 15px;
+  color: #0f58bc;
   font-weight: 700;
+  font-size: 20px;
+}
+
+.promo-text {
+  text-align: left;
+}
+
+.ads {
+  width: 700px;
+  height: 120px;
+  margin-left: 22px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.search-nav {
+  display: flex;
+  color: #0f58bc;
+  font-size: 16px;
+  margin: 7px;
+}
+
+.search {
+  display: flex;
+  margin-left: -180px;
+}
+
+.logo {
+  width: 200px;
+  margin-top: -34px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.search-area {
+  width: 700px;
+  height: 40px;
+  border: 2px solid #ffd85d;
+}
+
+.search-button {
+  background-color: #ffd85d;
+  border: 2px solid #ffd85d;
+  height: 40px;
+  width: 80px;
+  cursor: pointer;
+  font-size: 16px;
 }
