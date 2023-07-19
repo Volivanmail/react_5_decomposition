@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+// Компонент рекламного блока справа от новостного блока
 export default function Promo ({ props }) {
 
     const { title, description, img, link } = props

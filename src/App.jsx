@@ -8,6 +8,7 @@ import Search from './components/Search/Search';
 import SearchNav from './components/Search/SearchNav';
 import adsBanner from './data/icon/adsBanner.png';
 import ya from './data/icon/ya.png';
+import Widgets from './components/Widgets/Widgets';
 
 
 export default function App() {
@@ -26,21 +27,9 @@ export default function App() {
         <Search icon={ya}/>
         <Ads image={adsBanner} />
       </section>
-      {/* <footer className='footer'>
-        <div>
-          <WeatherWidget icon={require("./Media/rain_weather_icon_151998.png")} mailLink="#" mainTemp="+17" upLink="#" upName="Утром" upTemp="+17" downLink="#" downName="Днем" downTemp="+20"/>
-          <PopularWidget popular={popular} />
-        </div>
-        <div>
-          <Widget title="Карта России" link="#"><a href="/#">Расписания</a></Widget>
-          <TvWidget tv={tv} />
-        </div>
-        <div>
-          <TvWidgetOnline tvOnline={tvOnline} />
-        </div>
-       
-        
-      </footer> */}
+      <section className='widgets'>
+        <Widgets/>
+      </section>
     </>
   );
 }

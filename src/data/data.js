@@ -2,25 +2,6 @@ import png from './icon/png.png';
 import png2 from './icon/png2.png';
 import png3 from './icon/png3.png';
 import yn from './icon/yn.png';
-
-
-// export const popular = [
-//     { title: "Практикум", subtitle: "— стать аналитиком" },
-//     { title: "Яндекс.Браузер", subtitle: "— с переводом страниц" },
-//     { title: "Недвижимость", subtitle: "— жилье с евроремонтом" }
-// ];
-  
-// export const tv = [
-//     { time: "10:55", title: "Пятый канал", channel: "Улицы разбитых фонарей. 2-я серия" },
-//     { time: "11:20", title: "Россия 24", channel: "Бегасон TV" },
-//     { time: "12:45", title: "РЕН ТВ", channel: 'Казино "Рояль" ' }
-// ];
-
-// export const podcasts = [
-//     { title: "Управление как искусство", station: "Успех" },
-//     { title: "Ночь. Мир в это время", station: "earthTV" },
-//     { title: "Андрей Возн...", station: "Совершенно Секретно" }
-// ];
   
 export const rates = [
     {link: "#", title: "USD MOEX", rate: "90,00", growth: "+1,50"},
@@ -58,7 +39,7 @@ export const news = [
     },
     {
         link: "#",
-        text: 'Экстрасенс заявила мужчине, что его усопший отец повелел подарить ей крупную сумму денег',
+        text: 'Цветочный магазин на самом деле является тайным баром',
         icon: png
     },
     {
@@ -73,16 +54,27 @@ export const news = [
     }
 ];
   
-// export const searchExample = "текст песни тает лед";
-  
 export const promo = {
     link: "#",
     title: "Работа над ошибками",
     description: "Смотрите на Яндексе и запоминайте",
     img: yn
 };
+
+export const frequented = [
+    "Недвижимость о сталинках",
+    "Маркет люстры и светильники",
+    "Авто.ру привод 4х4 до 500 000"
+]
   
-// export const currentWeather = {
-//     day: 10,
-//     night: 7
-// };  
+export const programtv = [
+    "02:00   THT. Best  THT International",
+    "02:15   Джинглики Карусель Int",
+    "02:25   Наедине со всеми Первый"
+]
+  
+export const air = [
+    "Управление как искусство Успех",
+    "Ночь. Мир в это время earthTV",
+    "Андрей Возн... Совершенно Секретно"
+]

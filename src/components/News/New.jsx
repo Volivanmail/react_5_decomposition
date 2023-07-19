@@ -1,5 +1,6 @@
 import uniqid from 'uniqid';
 import PropTypes from 'prop-types';
+
 // Компонент список новостей
 
 export default function New({ news }) {

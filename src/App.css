@@ -1,14 +1,22 @@
 #root {
+  width: 1050px;
+  display: flex;
+  flex-direction: column;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  padding-left: 200px;
 }
 
 .news-block {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+}
+
+
+.search-block {
+  margin: 20px 180px 0 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .local-date {
@@ -18,7 +26,7 @@
 
 .rates-list {
   display: flex;
-  padding-left: 15px;
+  margin-left: 37px;
   font-size: 14px;
 }
 
@@ -45,6 +53,7 @@
 .news-nav {
   display: flex;
   flex-direction: row;
+  margin-left: 23px;
 }
 
 .news {
@@ -60,7 +69,7 @@
 
 li {
   display: flex;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
 }
 
 li img {
@@ -73,7 +82,7 @@ ul {
   list-style: none;
   padding: 0;
   margin: 5px;
-}
+} 
 
 a {
   font-weight: inherit;
@@ -87,7 +96,7 @@ a:hover {
 .promo {
   display: flex;
   flex-direction: column;
-  padding-left: 70px;
+  padding-left: 40px;
   align-items: flex-start;
   justify-content: flex-end;
 }
@@ -126,24 +135,25 @@ a:hover {
   display: flex;
   color: #0f58bc;
   font-size: 16px;
-  margin: 7px;
+  margin: 5px;
 }
 
 .search {
   display: flex;
-  margin-left: -180px;
+  align-items: center;
+  margin-top: -40px;
+  margin-left: -185px;
 }
 
 .logo {
   width: 200px;
-  margin-top: -34px;
   background-position: center center;
   background-size: cover;
 }
 
 .search-area {
   width: 700px;
-  height: 40px;
+  height: 35px;
   border: 2px solid #ffd85d;
 }
 
@@ -154,4 +164,38 @@ a:hover {
   width: 80px;
   cursor: pointer;
   font-size: 16px;
+}
+
+.search-item {
+  margin: 12px;
+}
+
+.widgets-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.widgets {
+  margin-left: 40px;
+}
+
+.widget {
+  width: 30%;
+}
+
+.widget-title {
+  color: #0f58bc;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.pogoda {
+  display: flex;
+}
+
+.pogoda-logo {
+  width: 80px;
+}
+.pogoda-data {
+
 }

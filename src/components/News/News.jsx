@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 
 
-//Список новостей,  
+//Компонент новостного блока  
 
 export default function News({navNews, news}) {
     const [stateFilter, selectFilter] = useState("Сейчас в СМИ");
